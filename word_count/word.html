@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word counter</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        textarea{
+            color: rgb(0, 0, 0);
+            font-size: large;
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        button{
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+    function calculate() {
+        document.getElementById("result").innerHTML="THE TOTAL NUMER OF WORDS ARE: "+document.getElementById("words").value.split(" ").length;
+    }</script>
+    <center><div>
+        <h1 style="text-align: center;">WORD COUNTER</h1><br>
+        <br>
+        <textarea name="" id="words" cols="60" rows="15" placeholder="Enter the text here"></textarea><br>
+        <button type="button" onclick="calculate()">CALCULATE</button>
+    
+        <h1 id="result"> </h1>
+    </div>
+</center>
+</body>
+</html>
